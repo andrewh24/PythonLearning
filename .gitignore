@@ -1,3 +1,5 @@
 .vscode/settings.json
 t.py
 *.pyc
+tweets.json
+*.swp
