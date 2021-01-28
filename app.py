@@ -22,7 +22,25 @@ class MyClass:
         for i in range(len(s)-1, -1, -1):
             print(s[i], end='')
 
-doctest.testmod()
+# x = 3.15487
+# print(x.as_integer_ratio())
+# print(x.hex())
+
+
+original = {'flour':630, 'sugar':15, 'salt':10, 'yeast':10, 'olive oil':32, 'water':420}
+print('Original grams:', original)
+
+p = 500/630
+print('Ratio: ', p)
+
+portioned = {}
+for k,v in original.items():
+    portioned[k] = round(v*p)
+    # portioned.append(k, round(v*k))
+
+# portioned = {x: x*p for x in original.items()}
+print("Portioned grams: ", portioned)
+
 # Create an Api instance.
 # api = twitter.Api(consumer_key=CONSUMER_KEY,
 #                   consumer_secret=CONSUMER_SECRET,
